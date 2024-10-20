@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(login.png);
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #e2bb3c;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: end;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desserts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Dessert Card Styles */
+.dessert {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.dessert:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dessert img {
+    border-radius: 15px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #ff6600;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(login.png);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center; line-height: 50px;
+    color: wheat;
+    font-size: 22px;
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+    .desserts {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        padding-right: 50px;
+    }
+}

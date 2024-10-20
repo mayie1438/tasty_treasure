@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #314e52;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(login.png);
+    color: #f0d683;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tip-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center; line-height: 50px;
+    color: wheat;
+    font-size: 22px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(login.png);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
